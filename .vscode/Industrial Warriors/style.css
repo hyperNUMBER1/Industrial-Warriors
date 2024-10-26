@@ -1,0 +1,131 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #e0e0e0;
+    background-color: #1a1a1a;
+}
+
+/* Menu Lateral */
+.menu-lateral {
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(43, 43, 43, 0.9); /* Fundo transparente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    border-right: 3px solid #ff4c4c;
+}
+.menu-lateral h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ff4c4c;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px #000;
+}
+.menu-lateral nav ul {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+.botao-interativo {
+    display: block;
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 15px 0;
+    margin: 10px 0;
+    border: 2px solid transparent;
+    transition: background 0.3s, border-color 0.3s;
+}
+.botao-interativo:hover {
+    background-color: #ff4c4c;
+    border-color: #e0e0e0;
+}
+
+/* Botão de Jogar - Destaque */
+.botao-jogar {
+    display: block;
+    background-color: #ff4c4c;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 0;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 2px solid #ff4c4c;
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+.botao-jogar:hover {
+    background-color: #e0e0e0;
+    color: #1a1a1a;
+    border-color: #e0e0e0;
+}
+
+/* Estilo Principal */
+main {
+    margin-left: 220px;
+    padding: 40px;
+}
+.intro {
+    text-align: center;
+}
+.intro h2 {
+    font-size: 2em;
+    color: #ff4c4c;
+    margin-bottom: 20px;
+}
+.intro p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.imagem-principal {
+    max-width: 90%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.imagem-principal:hover {
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    background-color: rgba(43, 43, 43, 0.9); /* Fundo transparente */
+    color: #a0a0a0;
+    text-align: center;
+    padding: 15px;
+    border-top: 3px solid #ff4c4c;
+}
+
+/* Compatibilidade para Dispositivos Móveis */
+@media (max-width: 768px) {
+    .menu-lateral {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 20px;
+        border-right: none;
+        border-bottom: 3px solid #ff4c4c;
+    }
+    main {
+        margin: 0;
+        padding: 20px;
+    }
+    .botao-interativo,
+    .botao-jogar {
+        width: 100%;
+    }
+}
+/* Efeito de clique */
+.clicked {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
