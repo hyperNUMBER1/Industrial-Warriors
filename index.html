@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="light-mode">
+    <div id="loader" class="loader"></div>
     <div class="menu-lateral">
         <h1>IW</h1>
         <nav>
@@ -24,12 +25,17 @@
         <section class="intro">
             <h2>Bem-vindo ao Industrial Warriors</h2>
             <p>Prepare-se para intensas batalhas e estratégias desafiadoras no mundo de guerra imersivo que criamos!</p>
-            <img src="imagemteste.jpg" alt="Imagem do Inudstrial Warriors" class="imagem-principal">
+            <img src="imageteste.jpg" alt="Imagem do Inudstrial Warriors" class="imagem-principal">
+            <button id="toggle-button">
+                🌙 Mudar para Modo Claro
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 IW - Jogo de Guerra no Roblox. Todos os direitos reservados.</p>
+        <div class="toggle-container" onclick="toggleMode()">
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
