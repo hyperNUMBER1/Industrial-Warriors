@@ -316,3 +316,97 @@ main {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+/* Estilo para o corpo */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Modo Claro */
+body.light-mode {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Modo Escuro */
+body.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+/* Contêiner do botão */
+.toggle-container {
+    width: 80px;
+    height: 40px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.5s;
+}
+
+/* Estilos do modo escuro */
+body.dark-mode .toggle-container {
+    background-color: #333;
+}
+
+/* Botão do modo claro */
+.toggle-circle {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+/* Ícones */
+.sun-icon, .moon-icon {
+    font-size: 18px;
+    color: inherit; /* Usar a cor padrão do modo */
+    pointer-events: none; /* Prevenir interações no ícone */
+}
+
+/* Exibir o ícone do sol no modo claro */
+body.light-mode .sun-icon {
+    display: block;
+    color: #FFA500; /* Cor laranja para o sol */
+}
+
+/* Exibir o ícone da lua no modo escuro */
+body.dark-mode .moon-icon {
+    display: block;
+    color: #FFD700; /* Cor amarela para a lua */
+}
+
+/* Posicionamento do círculo para modos */
+.light-mode .toggle-circle {
+    transform: translateX(0);
+}
+
+.dark-mode .toggle-circle {
+    transform: translateX(40px);
+}
+
+/* Estilos para o footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+}
+
+footer .toggle-container {
+    margin-top: 10px;
+}

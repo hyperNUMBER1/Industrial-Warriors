@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="light-mode">
     <div id="loader" class="loader"></div>
     <div class="menu-lateral">
         <h1>IW</h1>
@@ -31,7 +31,12 @@
 
     <footer>
         <p>&copy; 2024 IW - Jogo de Guerra no Roblox. Todos os direitos reservados.</p>
-        <button id="toggleTheme" class="toggle-theme">Modo Escuro</button>
+        <div class="toggle-container" onclick="toggleMode()">
+            <div class="toggle-circle">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon" style="display: none;">🌙</span>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
