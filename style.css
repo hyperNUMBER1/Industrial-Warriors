@@ -17,7 +17,8 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    background-color: rgba(43, 43, 43, 0.9); /* Fundo transparente */
+    background-color: rgba(43, 43, 43, 0.9); 
+    /* Fundo transparente */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,8 +102,41 @@ footer {
     background-color: rgba(43, 43, 43, 0.9); /* Fundo transparente */
     color: #a0a0a0;
     text-align: center;
-    padding: 15px;
+    padding: 20px; /* Aumenta o espaçamento */
     border-top: 3px solid #ff4c4c;
+    border-radius: 15px; /* Adiciona bordas circulares */
+    margin-top: 20px; /* Adiciona um espaço acima do rodapé */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para o rodapé */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para mudanças de cor */
+}
+
+/* Links dentro do rodapé */
+footer a {
+    color: #ff4c4c; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    margin: 0 10px; /* Espaçamento entre os links */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+/* Efeito ao passar o mouse sobre os links */
+footer a:hover {
+    color: #ffffff; /* Muda a cor ao passar o mouse */
+}
+
+/* Estilos para ícones de redes sociais */
+footer .social-icons {
+    margin: 10px 0; /* Espaçamento acima e abaixo dos ícones */
+}
+
+footer .social-icons img {
+    width: 30px; /* Tamanho dos ícones */
+    margin: 0 5px; /* Espaçamento entre os ícones */
+    transition: transform 0.3s; /* Transição suave para animação */
+}
+
+/* Efeito ao passar o mouse sobre os ícones */
+footer .social-icons img:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho do ícone */
 }
 
 /* Compatibilidade para Dispositivos Móveis */
