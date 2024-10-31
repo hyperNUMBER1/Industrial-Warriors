@@ -26,18 +26,3 @@ document.querySelectorAll(".botao-interativo, .botao-jogar").forEach(button => {
         setTimeout(() => button.classList.remove("clicked"), 300);
     });
 });
-document.addEventListener("DOMContentLoaded", function () {
-    // Remove o loader após carregamento
-    const loader = document.getElementById("loader");
-    setTimeout(() => loader.style.display = "none", 1000);
-
-    // Alternância de modo escuro
-    const toggleThemeBtn = document.getElementById("toggleTheme");
-    toggleThemeBtn.addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
-    });
-});
-function toggleMode() {
-    document.body.classList.toggle('dark-mode');
-    document.body.classList.toggle('light-mode');
-}
