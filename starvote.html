@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Localização</title>
+    <title>Industrial Warriors</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
-<body>
+
+<body class="light-mode">
     <div class="menu-lateral">
         <img src="favicon.png" alt="Logo do Jogo" width="70">
         <nav>
             <ul>
-                <li><a href="starvote.html" class="botao-interativo">Vote Aqui!</a></li>
                 <li><a href="https://www.roblox.com/games/94400378201710/Industrial-Warriors" target="_blank" class="botao-jogar">Jogue Agora</a></li>
                 <li><a href="index.html" class="botao-interativo">Início</a></li>
                 <li><a href="sobre.html" class="botao-interativo">Sobre o Jogo</a></li>
                 <li><a href="como-foi-feito.html" class="botao-interativo">Como Foi Feito</a></li>
+                <li><a href="localizacao.html" class="botao-interativo">Localização</a></li>
             </ul>
         </nav>
     </div>
 
     <main>
         <section class="intro">
-            <h2>Localização</h2>
-            <p>Estaremos no <strong>Laboratório de Informática</strong></p>
-            <img src="Assets/Laboratorio.jpg" alt="" class="imagem-principal"> 
+            <h2>Nosso Star Vote!</h2>
+            <p>Avalie o nosso jogo, Industrial Warriors!</p>
+            <img src="Assets/qrcode.jpg" alt="Imagem do qrcode" class="imagem-principal" width="300" height="500">
             <button id="toggle-button">
                 🌙 Mudar para Modo Claro
         </section>
@@ -34,6 +35,9 @@
 
     <footer>
         <p>&copy; 2024 IW - Jogo de Guerra no Roblox. Todos os direitos reservados.</p>
+        <div class="toggle-container" onclick="toggleMode()">
+            </div>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>

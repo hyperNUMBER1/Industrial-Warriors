@@ -404,26 +404,23 @@ body.light-mode {
 }
 
 body.light-mode button {
-    background-color: #007bff; /* Cor de fundo do botão no modo claro */
+    background-color: #d9534f; /* Cor de fundo do botão no modo claro */
     color: #fff;
 }
 
 body.light-mode button:hover {
-    background-color: #0056b3; /* Cor de fundo ao passar o mouse no modo claro */
+    background-color: #792825; /* Cor de fundo ao passar o mouse no modo claro */
 }
 
-/* Estilos para o footer */
-footer {
-    margin-top: 20px;
-    padding: 10px;
-    text-align: center;
-    background-color: #444; /* Cor de fundo do footer escuro */
-    color: #fff; /* Cor do texto do footer */
-    transition: background-color 0.3s, color 0.3s;
+/* Estilo para o menu lateral no modo claro */
+body.light-mode .menu-lateral {
+    background-color: #ffffff; /* Cor de fundo do menu no modo claro */
+    color: #222; /* Cor do texto do menu no modo claro */
 }
 
-/* Estilos para o footer no modo claro */
+/* Estilo claro para o footer */
+
 body.light-mode footer {
-    background-color: #f8f9fa; /* Cor de fundo clara do footer */
-    color: #222; /* Cor do texto escuro do footer */
+    background-color: #f1f1f1; /* Cor de fundo para o modo claro */
+    color: #333; /* Cor do texto para o modo claro */
 }
